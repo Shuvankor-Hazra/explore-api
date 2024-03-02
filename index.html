@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <title>Fetch</title> -->
+    <!-- <title>Async Await</title> -->
+    <title>Interval</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .my-btn {
+        background-color: #0d490d;
+        color: white;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body class="min-h-dvh">
+    <div class="flex justify-center items-center gap-5 p-10">
+      <button onclick="loadData()" class="btn-lg my-btn">Load Data</button>
+      <button onclick="loadData2()" class="btn-lg my-btn">Load Data 2</button>
+      <button onclick="loadUsers()" class="btn-lg my-btn">Load Users</button>
+      <button onclick="loadUsers2()" class="btn-lg my-btn">Load Users 2</button>
+      <button onclick="createAPost()" class="btn-lg my-btn">Create A Post</button>
+      <button onclick="deleteAPost()" class="btn-lg my-btn">Delete A Post</button>
+      <button onclick="patchAPost()" class="btn-lg my-btn">Update A Post</button>
+    </div>
+    <div class="card-container text-white text-center">
+      <ul id="card-list"></ul>
+    </div>
+
+    <!-- Scripts -->
+    <!-- <script src="./js/async.js"></script> -->
+    <!-- <script src="./js/interval.js"></script> -->
+    <script src="./js/fetch.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
